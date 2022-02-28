@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Layout</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <script src="colors.js" defer></script>
+    <script src="mobile-nav-animation.js" defer></script>
+
+</head>
+<body>
+    <div class="wrapper flex">
+        <div class="background-wrapper"><div class="background">
+        </div></div>
+
+        <!--NAVIGATION-->
+
+        <div class="nav flex">
+            <img id="logo" src="images/logo.png" alt="Starbucks logo">
+            <div class="menu-icon">
+                <img id="icon-menu" src="images/menu-icon.png" alt="open-menu">
+            
+            </div>
+            <ul id="desktop-navigation" class="flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="mobile-navigation" class="flex" data-visible="false">
+            <img id="close-mobile-nav" class="menu-icon" src="images/close-icon.png" >
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+                <!--MAIN CONTENT-->
+    <main class="flex">
+        <div class="main-content flex">
+            <div id="main-text">
+                <h2>It's not just Coffee. <br> It's <span class="ff-starbucks">Matcha dessert.</span></h2>
+                <p>This blend of sweetened premium matcha green tea inspired dessert, milk and ice-topped off with sweetened whipped cream inspires a delicious boost and good green vibes.</p>
+                <form>
+                    <ul class="colors flex">
+                        <li class="coffee-type"><input type="radio" name="coffee" id="green" value="green"><label for="green"><img src="./images/thumb1.png" alt=""></label></input></li>
+
+                        <li class="coffee-type"><input type="radio" name="coffee" id="pink" value="pink"><label for="pink"><img src="./images/thumb2.png" alt=""></label></input></li>
+                        
+                        <li class="coffee-type"><input type="radio" name="coffee" id="magenta" value="magenta"><label for="magenta"><img src="./images/thumb3.png" alt=""></label></input></li>
+                    </ul>
+                </form>
+            </div>
+
+            <img id="main-image" src="images/img1.png" alt="dessert image"> 
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/Starbucks" target="_blank"><img src="./images/facebook-48.png" alt=""></li>
+                <li><a href="https://www.instagram.com/starbucks/" target="_blank"><img src="./images/instagram-48.png" alt=""></li>
+                <li><a href="#"><img src="./images/twitter-48.png" alt=""></li>
+            </ul>
+   
+        </div>
+
+
+
+
+    </main>
+    </div>
+
+
+
+
+</body>
+</html>

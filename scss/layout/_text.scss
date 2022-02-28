@@ -1,0 +1,41 @@
+@import 'breakpoints';
+
+.ff-starbucks{
+    font-family: "Starbucks";
+    color: $primary-green;
+    text-transform: uppercase;
+}
+.main-content{
+
+
+    #main-text{
+        text-align: center;
+        padding-top: 5%;
+
+        @include responsive(desktop){
+            text-align: left;
+            padding: 10%;
+            padding-bottom: 0;
+
+  
+        }
+
+        h2{
+            font-size: 2rem;
+            line-height: 40pt;
+        }
+        span{
+            font-size: 2rem;
+        }
+        
+        p{
+            padding: 1rem 10% 0 10%;
+
+            @include responsive(desktop){
+                padding: 0;
+            }
+        }
+
+        }
+        
+    }

@@ -1,0 +1,34 @@
+@import 'layout/background';
+@import 'layout/colors';
+@import 'layout/breakpoints';
+@import 'layout/navigation';
+@import 'layout/text';
+@import 'layout/_main_layout.scss';
+@import 'layout/form_animation';
+
+$font-stack: Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: "Starbucks";
+    src: url(../fonts/starbucks/Santana-BlackCondensed.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $defaul-font-color;
+    font-family: $font-stack;
+    font-size: 1.2rem;
+    line-height: 25pt;
+}
+.flex{
+    display: flex;
+}
+.display-none{
+    display: none;
+}
+ul {
+    list-style: none;
+}
+

@@ -1,0 +1,313 @@
+.wrapper {
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.wrapper .background-wrapper {
+  width: 100vw;
+  position: absolute;
+  z-index: -3999;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .background-wrapper .background {
+  width: 120vw;
+  height: 120vw;
+  border-radius: 50%;
+  background-color: #027143;
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  top: 30vh;
+  left: 10%;
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapper .background-wrapper .background {
+    top: 70vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .wrapper .background-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 90vh;
+  }
+  .wrapper .background-wrapper .background {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    left: 50%;
+    top: 0;
+  }
+}
+
+.nav {
+  max-height: 10vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+  z-index: 2;
+  background-color: white;
+}
+
+.nav #logo {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.nav #desktop-navigation {
+  display: none;
+}
+
+@media only screen and (min-width: 900px) {
+  .nav #logo {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .nav #icon-menu {
+    display: none;
+  }
+  .nav #desktop-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+  }
+  .nav #desktop-navigation li {
+    padding-right: 2em;
+  }
+  .nav #desktop-navigation li a {
+    text-decoration: none;
+  }
+}
+
+#mobile-navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70vw;
+  height: 100%;
+  background-color: white;
+  z-index: 9999;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 350ms ease-out;
+  transition: 350ms ease-out;
+}
+
+#mobile-navigation #close-mobile-nav {
+  position: absolute;
+  top: 1em;
+  right: 2em;
+}
+
+#mobile-navigation ul li {
+  padding-bottom: 1.2rem;
+}
+
+#mobile-navigation ul li a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 900px) {
+  #mobile-navigation {
+    display: none;
+  }
+}
+
+#mobile-navigation[data-visible="false"] {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+#mobile-navigation[data-visible="true"] {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.ff-starbucks {
+  font-family: "Starbucks";
+  color: #027143;
+  text-transform: uppercase;
+}
+
+.main-content #main-text {
+  text-align: center;
+  padding-top: 5%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-content #main-text {
+    text-align: left;
+    padding: 10%;
+    padding-bottom: 0;
+  }
+}
+
+.main-content #main-text h2 {
+  font-size: 2rem;
+  line-height: 40pt;
+}
+
+.main-content #main-text span {
+  font-size: 2rem;
+}
+
+.main-content #main-text p {
+  padding: 1rem 10% 0 10%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-content #main-text p {
+    padding: 0;
+  }
+}
+
+.main-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2em;
+}
+
+.main-content img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.main-content .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -5%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 5%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main-content #main-text {
+    max-width: 50%;
+  }
+  .main-content .social-icons {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 10em;
+    margin-left: 10em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+}
+
+form li input {
+  position: absolute;
+  opacity: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  form li {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  form li input {
+    position: absolute;
+    opacity: 0;
+  }
+  form li:hover {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@font-face {
+  font-family: "Starbucks";
+  src: url(../fonts/starbucks/Santana-BlackCondensed.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #3a3a3a;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 25pt;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.display-none {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */

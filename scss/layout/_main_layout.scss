@@ -1,0 +1,43 @@
+.main-content{
+    flex-direction: column;
+    min-height: 100vh;
+    // max-height: 110vh;
+    align-items: center;
+
+    ul{
+
+        justify-content: center;
+        padding-top: 2em;
+        
+
+    }
+
+    img{
+        transform: scale(.8);
+    }
+    .social-icons{
+        display: flex;
+        position: relative;
+        top: -5%;
+    }
+
+    @include responsive(desktop){
+            flex-direction: row;
+            padding-top: 5%;
+            align-items: flex-start;
+
+            #main-text{
+                max-width: 50%;
+            }
+            .social-icons{
+                align-self: flex-start;
+                margin-top: 10em;
+                margin-left: 10em;
+                flex-direction: column;
+                padding: 0;
+            }
+
+        
+
+    }
+}

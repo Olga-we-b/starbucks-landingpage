@@ -1,0 +1,26 @@
+@import 'breakpoints';
+form{
+    li{
+        input{
+            position: absolute;
+            opacity: 0;
+
+        }
+    }
+}
+
+@include responsive(desktop){
+    form{
+        li{
+            transition: 1s;
+
+            input{
+                position: absolute;
+                opacity: 0;
+            }
+        }
+        li:hover{
+            transform: translateY(-20px);
+        }
+    }
+}

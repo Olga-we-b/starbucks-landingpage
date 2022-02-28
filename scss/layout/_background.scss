@@ -1,0 +1,63 @@
+@import 'colors';
+@import 'breakpoints';
+
+.wrapper{
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-end;
+    .background-wrapper{
+        width: 100vw;
+        // height: 100%;
+        position: absolute;
+        z-index: -3999;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+
+        .background{
+            width: 120vw;
+            height: 120vw;
+            border-radius: 50%;
+            background-color: $primary-green;
+            position: relative;
+            align-self: flex-end;
+            top: 30vh;
+            left: 10%;
+
+
+            
+
+        
+        }    
+    }
+    @include responsive(tablet-landscape){
+        .background-wrapper{
+            .background{
+                top: 70vh;
+            }
+        }
+ 
+    }
+    @include responsive(desktop){
+        justify-content: flex-start;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        .background-wrapper{
+            flex-direction: row;
+            align-self: flex-start;
+            align-items: flex-start;
+            height: 90vh;
+            .background{
+                align-self: flex-end;
+                left: 50%;
+                top: 0;
+            }
+    
+        }
+        
+    }
+}
